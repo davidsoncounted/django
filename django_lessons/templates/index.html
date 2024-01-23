@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <img src="../static/assets/img/hand.JPG"> -->
+    djhdjdjdjdjdjd
+    {% if formed.is_authenticated %}
+    <button><a href="logout">Logout</a></button>
+    {% else %}
+    <button><a href="user">Login</a></button>
+    <button><a href="{% url 'register' %}">register</a></button>
+    {% endif %}
+</body>
+</html>
